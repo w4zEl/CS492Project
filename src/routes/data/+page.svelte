@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { Table, TableHead, TableRow, TableHeader, TableBody, TableCell } from "$lib/components/ui/table";
+
 	let collectedData = [
 		{ name: 'John Doe', email: 'john@example.com', message: 'Hello!' },
 		{ name: 'Jane Smith', email: 'jane@example.com', message: 'This is great!' }
@@ -8,21 +10,21 @@
 <h1 class="text-3xl font-semibold text-center mt-8">Collected Data</h1>
 <p class="text-center mt-2">Here is a summary of the data collected so far.</p>
 
-<table class="table-auto border-collapse border border-gray-300 w-full mt-8">
-	<thead>
-		<tr class="bg-gray-100">
-			<th class="border border-gray-300 px-4 py-2">Name</th>
-			<th class="border border-gray-300 px-4 py-2">Email</th>
-			<th class="border border-gray-300 px-4 py-2">Message</th>
-		</tr>
-	</thead>
-	<tbody>
+<Table class="mt-8">
+	<TableHead>
+		<TableRow>
+			<TableHeader>Name</TableHeader>
+			<TableHeader>Email</TableHeader>
+			<TableHeader>Message</TableHeader>
+		</TableRow>
+	</TableHead>
+	<TableBody>
 		{#each collectedData as data}
-			<tr>
-				<td class="border border-gray-300 px-4 py-2">{data.name}</td>
-				<td class="border border-gray-300 px-4 py-2">{data.email}</td>
-				<td class="border border-gray-300 px-4 py-2">{data.message}</td>
-			</tr>
+			<TableRow>
+				<TableCell>{data.name}</TableCell>
+				<TableCell>{data.email}</TableCell>
+				<TableCell>{data.message}</TableCell>
+			</TableRow>
 		{/each}
-	</tbody>
-</table>
+	</TableBody>
+</Table>
