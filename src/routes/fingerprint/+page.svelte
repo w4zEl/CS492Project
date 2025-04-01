@@ -44,6 +44,16 @@
 		fingerprinting). Websites store this data in a database for each user.
 	</p>
 
+	<p class="my-[1em] text-base font-normal leading-relaxed">
+		One way to prevent your browser fingerprint from being collected, decreasing the amount of data
+		that sites can collect about you, is to disable JavaScript in your browser. To try it out, go to
+		chrome://settings/content/javascript and click on "Don't allow sites to use JavaScript", then
+		refresh this page. You should see that we can now collect much less information about you,
+		although many things are still traceable. However, the downside to this is that many sites rely
+		on JavaScript to function properly: for instance, you can see that after disabling JavaScript,
+		the "info" buttons in the table below no longer function. Thus, it is not the most practical
+		solution, but a solution nonetheless.
+	</p>
 	<p class="underline">Your device's fingerprint is:</p>
 
 	<div class="font-mono">
