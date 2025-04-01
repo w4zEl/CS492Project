@@ -1,9 +1,9 @@
 <script lang="ts">
     import Calendar from "@lucide/svelte/icons/calendar";
     import House from "@lucide/svelte/icons/house";
-    import Inbox from "@lucide/svelte/icons/inbox";
-    import Search from "@lucide/svelte/icons/search";
-    import Settings from "@lucide/svelte/icons/settings";
+    import Info from "@lucide/svelte/icons/info";
+    import Fingerprint from "@lucide/svelte/icons/fingerprint";
+    import Cookie from "@lucide/svelte/icons/cookie";
     import * as Sidebar from "$lib/components/ui/sidebar/index.js";
    
     // Menu items.
@@ -16,17 +16,17 @@
       {
         title: "Fingerprint",
         url: "fingerprint",
-        icon: Inbox,
+        icon: Fingerprint,
       },
       {
         title: "Why Care?",
         url: "why-care",
-        icon: Calendar,
+        icon: Info,
       },
       {
-        title: "Forum",
-        url: "forum",
-        icon: Search,
+        title: "Cookies",
+        url: "recommendations",
+        icon: Cookie,
       },
     ];
   </script>
