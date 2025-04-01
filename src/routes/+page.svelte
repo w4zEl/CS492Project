@@ -22,5 +22,8 @@
 		<Button variant="secondary">
 			<a href="/forum">Join the forum</a>
 		</Button>
+		<Button variant="secondary">
+			<a href="/recommendations">Find your recommendations!</a>
+		</Button>
 	</nav>
 </section>
