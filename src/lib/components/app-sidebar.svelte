@@ -10,7 +10,7 @@
     const items = [
       {
         title: "Home",
-        url: "#",
+        url: "/",
         icon: House,
       },
       {
@@ -19,8 +19,8 @@
         icon: Inbox,
       },
       {
-        title: "Form",
-        url: "form",
+        title: "Why Care?",
+        url: "why-care",
         icon: Calendar,
       },
       {
