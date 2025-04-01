@@ -24,10 +24,10 @@
 
 {#if !cookiesConsent}
 	<div
-		class="fixed bottom-4 left-4 right-4 flex items-center justify-between rounded-lg bg-white p-4 shadow-lg"
+		class="z-20 fixed bottom-4 left-4 right-4 flex items-center justify-between rounded-lg bg-white p-4 shadow-lg"
 		transition:fly={{ y: 200, duration: 2000 }}
 	>
-		<p class="text-sm z-99" >
+		<p class="text-sm" >
 			This website uses cookies to enhance your browsing experience. By continuing to use our
 			website, you agree to our <a href="/privacy-policy" class="text-blue-600 hover:text-blue-800 transition-colors duration-200 underline underline-offset-2 focus:outline-none focus:ring-2 focus:ring-blue-400">Privacy Policy</a>.
 		</p>
