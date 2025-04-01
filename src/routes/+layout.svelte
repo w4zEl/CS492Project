@@ -8,36 +8,19 @@
 	} from '$lib/components/ui/dropdown-menu';
 	import { Button } from '$lib/components/ui/button';
 	import { fly } from 'svelte/transition';
+	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
+	import AppSidebar from '$lib/components/app-sidebar.svelte';
 	let { children, data } = $props();
 	let cookiesConsent = $state(data.cookiesConsent);
 </script>
 
-<header class="bg-primary px-6 py-4 text-primary-foreground shadow-md">
-	<div class="container mx-auto flex items-center justify-between">
-		<a href="/" class="text-lg font-bold">Privacy Awareness Project</a>
-		<DropdownMenu>
-			<DropdownMenuTrigger class="btn-secondary">Menu</DropdownMenuTrigger>
-			<DropdownMenuContent>
-				<DropdownMenuItem>
-					<a href="/">Home</a>
-				</DropdownMenuItem>
-				<DropdownMenuItem>
-					<a href="/form">Form</a>
-				</DropdownMenuItem>
-				<DropdownMenuItem>
-					<a href="/data">Data</a>
-				</DropdownMenuItem>
-				<DropdownMenuItem>
-					<a href="/forum">Forum</a>
-				</DropdownMenuItem>
-			</DropdownMenuContent>
-		</DropdownMenu>
-	</div>
-</header>
-
-<main>
-	{@render children()}
-</main>
+<Sidebar.Provider>
+	<AppSidebar />
+	<main>
+	  <Sidebar.Trigger />
+	  {@render children?.()}
+	</main>
+  </Sidebar.Provider>
 
 {#if !cookiesConsent}
 	<div
