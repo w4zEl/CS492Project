@@ -18,4 +18,6 @@
 	<p class="my-[1em] text-base font-normal leading-relaxed">
 		Companies can analyze your behavior to determine how much you're willing to pay—then charge you more than others for the same product or service.
 	</p>
+	<img src="/privacyInfo.webp" alt="privacy infographic" class="rounded-lg shadow-md" />
+
 </div>
