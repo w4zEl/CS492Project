@@ -6,7 +6,7 @@
 	import { onMount } from 'svelte';
 	import { Progress } from '$lib/components/ui/progress';
 	import { Switch } from '$lib/components/ui/switch';
-	import { Button } from "$lib/components/ui/button";
+	import { Button } from '$lib/components/ui/button';
 	const { data } = $props();
 	let fingerprint = $state<string>();
 	let charging = $state(false);
@@ -243,7 +243,5 @@
 			{/if}
 		</Table.Body>
 	</Table.Root>
-	<Button>
-		<a href="/cookies">Learn more about Cookies</a>
-	</Button>
+	<Button href="/cookies">Learn more about Cookies</Button>
 </div>
