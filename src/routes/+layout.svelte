@@ -39,7 +39,3 @@
 		>
 	</div>
 {/if}
-
-<footer class="bg-secondary py-4 text-center text-secondary-foreground">
-	<p>&copy; 2023 Privacy Awareness Project</p>
-</footer>
