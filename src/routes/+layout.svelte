@@ -10,9 +10,11 @@
 
 <Sidebar.Provider>
 	<AppSidebar />
-	<main>
+	<main class="flex flex-grow flex-col">
 		<Sidebar.Trigger />
-		{@render children?.()}
+		<div class="flex-grow">
+			{@render children?.()}
+		</div>
 	</main>
 </Sidebar.Provider>
 
