@@ -8,7 +8,7 @@
 </p>
 
 <section class="mt-8 flex flex-col items-center">
-	<img src="https://www.shutterstock.com/image-vector/simple-clean-detective-theme-logo-260nw-2399594973.jpg" alt="Privacy Awareness" class="rounded-lg shadow-md" />
+	<img src="/Detective.png" alt="Privacy Awareness" class="rounded-lg shadow-md" />
 	<p class="mt-4 text-center">
 		Explore how websites track your data through various interactions. Click below to get started!
 	</p>
