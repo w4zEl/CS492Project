@@ -14,16 +14,7 @@
 	</p>
 	<nav class="mt-6 flex gap-4">
 		<Button>
-			<a href="/form">Fill out a form</a>
-		</Button>
-		<Button variant="secondary">
-			<a href="/data">View collected data</a>
-		</Button>
-		<Button variant="secondary">
-			<a href="/forum">Join the forum</a>
-		</Button>
-		<Button variant="secondary">
-			<a href="/recommendations">Find your recommendations!</a>
+			<a href="/fingerprint">Start Your Journey</a>
 		</Button>
 	</nav>
 </section>

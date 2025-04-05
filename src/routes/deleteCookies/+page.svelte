@@ -1,3 +1,8 @@
+<script lang="ts">
+	import { Button } from "$lib/components/ui/button";
+</script>
+
+
 <div class="p-4 max-w-3xl mx-auto">
     <h1 class="my-[0.67em] text-2xl font-bold leading-tight">Manage Your Cookies</h1>
   
@@ -41,9 +46,9 @@
   <h2 class="ml-3 text-xl font-semibold mt-6">
     Go back to your feed after deleting cookies. See a difference?
   </h2>
-  <a href="/recommendations" class="inline-block mt-6">
-    <button
-    class="ml-3 relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-white bg-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:bg-indigo-700"    >
-      Go back
-    </button>
-  </a>
+
+<div class="ml-3">
+  <Button>
+		<a href="/cookies">Go back</a>
+	</Button>
+</div>

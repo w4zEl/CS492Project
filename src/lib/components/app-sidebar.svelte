@@ -19,14 +19,14 @@
         icon: Fingerprint,
       },
       {
+        title: "Cookies",
+        url: "cookies",
+        icon: Cookie,
+      },
+      {
         title: "Why Care?",
         url: "why-care",
         icon: Info,
-      },
-      {
-        title: "Cookies",
-        url: "recommendations",
-        icon: Cookie,
       },
     ];
   </script>

@@ -1,10 +1,10 @@
 
 <script lang="ts">
 	import { onMount } from "svelte";
+  import { Button } from "$lib/components/ui/button";
     let elonHovered = 1; 
     let catHovered = 1; 
     let startTime = 0; 
-
     const rows = 5;
     const cols = 8;
     
@@ -59,10 +59,10 @@ on:click={()=> {
     {/each}
   </div>
 
-  
-  <a href="/deleteCookies" class="inline-block mt-6">
-    <button
-    class="ml-3 relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-medium text-white bg-indigo-600 transition duration-300 ease-out rounded-full shadow-xl group hover:bg-indigo-700"    >
-      Learn How to Delete Cookies
-    </button>
-  </a>
+
+  <Button>
+		<a href="/deleteCookies">Learn How to Delete Cookies</a>
+	</Button>
+  <Button>
+		<a href="/why-care">Why should you care?</a>
+	</Button>

@@ -6,6 +6,7 @@
 	import { onMount } from 'svelte';
 	import { Progress } from '$lib/components/ui/progress';
 	import { Switch } from '$lib/components/ui/switch';
+	import { Button } from "$lib/components/ui/button";
 	const { data } = $props();
 	let fingerprint = $state<string>();
 	let charging = $state(false);
@@ -55,7 +56,6 @@
 		solution, but a solution nonetheless.
 	</p>
 	<p class="underline">Your device's fingerprint is:</p>
-
 	<div class="font-mono">
 		{#if fingerprint}
 			{fingerprint}
@@ -243,4 +243,7 @@
 			{/if}
 		</Table.Body>
 	</Table.Root>
+	<Button>
+		<a href="/cookies">Learn more about Cookies</a>
+	</Button>
 </div>
