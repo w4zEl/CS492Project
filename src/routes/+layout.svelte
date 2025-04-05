@@ -1,11 +1,5 @@
 <script lang="ts">
 	import '../app.css';
-	import {
-		DropdownMenu,
-		DropdownMenuContent,
-		DropdownMenuItem,
-		DropdownMenuTrigger
-	} from '$lib/components/ui/dropdown-menu';
 	import { Button } from '$lib/components/ui/button';
 	import { fly } from 'svelte/transition';
 	import * as Sidebar from "$lib/components/ui/sidebar/index.js";
@@ -39,7 +33,3 @@
 		>
 	</div>
 {/if}
-
-<footer class="bg-secondary py-4 text-center text-secondary-foreground">
-	<p>&copy; 2023 Privacy Awareness Project</p>
-</footer>
